@@ -1,0 +1,21 @@
+// Add all of this to your description.ext, or if you already have CfgFunctions defined
+// then merge it / copy the TAG subclasses (e.g. A455)
+class CfgFunctions
+{
+	class A455
+	{
+		class Debug
+		{
+			class updateTrackingMarkers {};
+		};
+		class General
+		{
+			class getHighestRankingOfficer {};
+		};
+	};
+	class TOUR {
+		class AI {
+			class skillAI {};
+		};
+	};
+};
