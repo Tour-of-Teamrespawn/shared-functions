@@ -9,13 +9,22 @@
 
 	Usage:
 	
-		["error", "There is something very, very wrong!"] call MYTAG_fn_hint;
+		call TOUR_fnc_debugRPT;
 
 	Author: Mr.Ben (Credit To Razorbacks)
+			Andy455 - Added MPEnded with same
 	Version: 1.0
 */
 diag_log text "";
 diag_log text "==========================================================================";
-diag_log text format["|============================= %1 =============================|", missionName];
+diag_log text format["|==================== STARTING: %1 ====================|", missionName];
 diag_log text "==========================================================================";
 diag_log text "";
+
+private _0 = addMissionEventHandler ["MPEnded", {
+	diag_log text "";
+    diag_log text "==========================================================================";
+	diag_log text format["|====================   ENDING: %1   ====================|", missionName];
+    diag_log text "==========================================================================";
+	diag_log text "";
+}];

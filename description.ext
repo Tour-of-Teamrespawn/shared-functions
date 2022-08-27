@@ -2,10 +2,12 @@
 // then merge it / copy the TAG subclasses (e.g. A455)
 class CfgFunctions
 {
+	
 	class A455
 	{
 		class Debug
 		{
+			// e.g. A455_fnc_updateTrackingMarkers
 			class updateTrackingMarkers {};
 		};
 		class General
@@ -14,8 +16,17 @@ class CfgFunctions
 		};
 	};
 	class TOUR {
+		class Debug {
+			// e.g. TOUR_fnc_debugRPT
+			class debugRPT {
+				// Run before objects & addons load
+				preinit = 1;
+			};
+			class hint {};
+		};
 		class AI {
 			class skillAI {};
+			class rndPatrol {};
 		};
 	};
 };
